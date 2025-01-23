@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  font-family: system-ui;
+}
+body {
+  background-color: #666666;
+}
+#grid_container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "nav content";
+}
+#item1 {
+  color: white;
+  background-color: black;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+#item1 > #navbar {
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  font-size: 25px;
+}
+#navbar > ul,
+.no_one,
+a {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+  text-decoration: none;
+  margin-top: 36px;
+  font-size: 20px;
+  padding-left: 3px;
+  color: white;
+  transition-duration: 0.3s;
+}
+#navbar > header {
+  margin-top: 10px;
+}
+#icon_book {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  font-size: 28px;
+}
+#icon {
+  position: relative;
+  top: 7px;
+  font-size: 28px;
+}
+.no_one:hover,
+.no_one:focus {
+  border-bottom: 6px solid white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+#item2 {
+  grid-area: content;
+  background-color: #666666;
+}
+.main-section > header {
+  color: #e6c300;
+  font-size: 25px;
+  margin: 20px 0px 20px 20px;
+}
+.article {
+  padding-right: 20px;
+  line-height: 1.5;
+  color: white;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.ul_html {
+  list-style-type: square;
+}
+#ul_css,
+#html_ul,
+#ul_js,
+#ul_node {
+  list-style-type: none;
+}
+#REACT {
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 376px){
+  .main-section > header {
+    padding-right: 4px;
+    font-size: 23px;
+  }
+  #grid_container {
+    grid-template-columns: 1fr 3fr;
+  }
+  #item1 > #navbar {
+    font-size: 15px;
+  }
+  #navbar > ul,
+  .no_one,
+  a {
+    font-size: 14px;
+  }
+  #icon_book {
+    font-size: 23px;
+  }
+  #icon {
+    position: relative;
+    top: 4px;
+    font-size: 19px;
+  }
+  .article {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 377px) and (max-width: 576px) {
+  .main-section > header {
+    padding-right: 4px;
+    font-size: 20px;
+  }
+  .article {
+    font-size: 13px;
+  }
+  #item1 > #navbar {
+    font-size: 18px;
+  }
+  #grid_container {
+    grid-template-columns: 1fr 3fr;
+  }
+  #navbar > ul,
+  .no_one,
+  a {
+    font-size: 17px;
+  }
+  #icon_book {
+    font-size: 25px;
+  }
+  #icon {
+    position: relative;
+    top: 7px;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  #grid_container {
+    grid-template-columns: 1fr 3fr;
+  }
+  #item1 > #navbar {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px){
+  #grid_container {
+    grid-template-columns: 1fr 4fr;
+  }
+  #item1 > #navbar {
+    font-size: 22px;
+  }
+}

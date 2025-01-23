@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div id="grid_container">
+        <div id="item1">
+            <nav id="navbar">
+                <header><ion-icon id="icon_book" name="clipboard-outline"></ion-icon> Web Document</header>
+                <ul>
+                    <li class="no_one" tabindex="0"><ion-icon id="icon" name="logo-html5"></ion-icon> <a class="nav-link" href="#HTML">HTML</a></li>
+                    <li class="no_one" tabindex="0"><ion-icon id="icon" name="logo-css3"></ion-icon> <a class="nav-link" href="#CSS">CSS</a></li>
+                    <li class="no_one" tabindex="0"><ion-icon id="icon" name="logo-javascript"></ion-icon> <a class="nav-link" href="#JS">JS</a></li>
+                    <li class="no_one" tabindex="0"><ion-icon id="icon" name="logo-nodejs"></ion-icon> <a class="nav-link" href="#NODE_JS">NODE JS</a></li>
+                    <li class="no_one" tabindex="0"><ion-icon id="icon" name="logo-react"></ion-icon> <a class="nav-link" href="#REACT">REACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="item2">
+            <main id="main-doc">
+                <section class="main-section" id="HTML">
+                    <header>HTML</header>
+                    <article class="article">
+                        <p>HTML (HyperText Markup Language) is the backbone of any web page.</p>
+                        <p>It defines the structure and layout of a webpage by using a variety of tags and elements.</p>
+                        <p>HTML is not a programming language; rather, it is a markup language that allows developers to create and organize content.</p>
+                        <p>Key Features of HTML:</p>
+                        <ul class="ul_html">
+                            <li class="list_html">Elements and Tags: HTML uses a series of elements, represented by tags, to enclose and define content. Examples include <code>p</code> for paragraphs, <code>a</code> for links, and <code>div</code> for divisions.</li>
+                            <li class="list_html">Attributes: Tags can have attributes that provide additional information about an element, such as <code>id</code>, <code>class</code>, <code>src</code>, and <code>href</code>.</li>
+                            <li class="list_html">Semantic HTML: Modern HTML encourages the use of semantic tags like <code>header</code>, <code>footer</code>, <code>article</code>, and <code>section</code>, which enhance accessibility and SEO.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="CSS">
+                    <header>CSS</header>
+                    <article class="article">
+                        <p>CSS (Cascading Style Sheets) is used to style and design web pages.</p>
+                        <p>It controls the presentation, layout, and overall look and feel of a website.</p>
+                        <p>CSS allows developers to separate content from design, making it easier to maintain and update web pages.</p>
+                        <p>Key Features of CSS:</p>
+                        <ul class="ul_html">
+                            <li>Selectors: CSS selectors target HTML elements to apply styles. Examples include class selectors (<code>.classname</code>), ID selectors (<code>#idname</code>), and element selectors (<code>elementname</code>).</li>
+                            <li>Box Model: The CSS box model defines how elements are displayed and how they interact with surrounding elements. It includes properties like margin, border, padding, and content.</li>
+                            <li>Flexbox and Grid Layouts: CSS Flexbox and Grid Layout are powerful layout modules that enable complex and responsive web designs without the need for floats or positioning hacks.</li>
+                            <li>Animations and Transitions: CSS allows for smooth animations and transitions, enhancing user experience with visual feedback.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="JS">
+                    <header>JS</header>
+                    <article class="article">
+                        <p>JavaScript is a high-level, interpreted programming language that adds interactivity and dynamic behavior to web pages.</p>
+                        <p>It enables developers to create interactive elements such as forms, sliders, and real-time updates.</p>
+                        <p>Key Features of JavaScript:</p>
+                        <ul class="ul_html">
+                            <li>DOM Manipulation: JavaScript can manipulate the Document Object Model (DOM), allowing developers to change the content, structure, and style of a web page dynamically.</li>
+                            <li>Event Handling: JavaScript handles events like clicks, mouse movements, and keyboard inputs, enabling interactive web experiences.</li>
+                            <li>Asynchronous Programming: JavaScript supports asynchronous operations through callbacks, promises, and <code>async/await</code>, allowing for non-blocking code execution.</li>
+                            <li>APIs and Libraries: JavaScript has a rich ecosystem of APIs and libraries, such as jQuery, Axios, and D3.js, which simplify complex tasks and enhance functionality.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="NODE_JS">
+                    <header>NODE_JS</header>
+                    <article class="article">
+                        <p>Node.js is a runtime environment that allows JavaScript to be executed on the server side.</p>
+                        <p>It uses the V8 engine, the same engine that powers Google Chrome, to run JavaScript outside of the browser.</p>
+                        <p>Key Features of Node.js:</p>
+                        <ul class="ul_html">
+                            <li>Non-Blocking I/O: Node.js uses an event-driven, non-blocking I/O model, making it efficient and suitable for real-time applications.</li>
+                            <li>NPM (Node Package Manager): NPM is the default package manager for Node.js, providing access to thousands of open-source libraries and tools.</li>
+                            <li>Express.js: Express.js is a popular web application framework for Node.js, simplifying the process of building robust and scalable web applications.</li>
+                            <li>Scalability: Node.js is designed to build scalable network applications, capable of handling numerous concurrent connections with high throughput.</li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="REACT">
+                    <header>REACT</header>
+                    <article class="article">
+                        <p>React is a JavaScript library for building user interfaces.</p>
+                        <p>Developed by Facebook, it allows developers to create reusable UI components and manage the state of complex applications efficiently.</p>
+                        <p>Key Features of React:</p>
+                        <ul class="ul_html">
+                            <li>Component-Based Architecture: React promotes a component-based approach, where UI elements are encapsulated in reusable components, making development more modular and maintainable.</li>
+                            <li>Virtual DOM: React uses a virtual DOM to optimize updates, ensuring that only the necessary parts of the real DOM are re-rendered, leading to improved performance.</li>
+                            <li>State and Props: React components can manage their state and receive data through props, enabling dynamic and interactive UIs.</li>
+                            <li>React Hooks: React Hooks, introduced in React 16.8, allow developers to use state and other React features in functional components, simplifying the code and enhancing reusability.</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
