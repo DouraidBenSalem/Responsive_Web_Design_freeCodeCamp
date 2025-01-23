@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  font-family: system-ui;
+}
+
+body {
+  height: 2000px;
+  background: url("cvb.jpg");
+  background-size: 1963px 2000px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#center {
+  position: relative;
+  text-align: center;
+  top: 12px;
+}
+
+#center > h1 {
+  font-size: 90px;
+  color: white;
+}
+
+#container_grid {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr;
+  width: 730px;
+  height: 1500px;
+  margin: 50px auto;
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  box-shadow: 0px 0px 100px rgb(0, 0, 1);
+}
+
+.item > #name-label {
+  position: relative;
+  font-size: 30px;
+  top: 50px;
+  left: 50px;
+  font-weight: 500;
+}
+
+.item > .form1 {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  padding: 5px 350px 5px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.item > #email-label {
+  position: relative;
+  font-size: 30px;
+  top: -70px;
+  left: 50px;
+  font-weight: 500;
+}
+
+.item > .form2 {
+  position: relative;
+  top: -80px;
+  left: 50px;
+  padding: 5px 350px 5px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.item > #number-label {
+  position: relative;
+  font-size: 30px;
+  top: -40px;
+  left: 50px;
+  font-weight: 500;
+}
+
+.item > .form3 {
+  position: relative;
+  top: -50px;
+  left: 50px;
+  padding: 5px 350px 5px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.item > #description {
+  position: relative;
+  font-size: 20px;
+  left: 50px;
+  top: -20px;
+  font-weight: 500;
+}
+
+.item > .form4 {
+  position: relative;
+  font-size: 20px;
+  left: 50px;
+  padding: 5px 350px 5px 20px;
+  border-radius: 5px;
+  top: -10px;
+}
+
+.item2 {
+  margin: 10px 0px 0px 50px;
+}
+
+.item2 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-radio {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.item3 {
+  margin: 20px 0px 0px 50px;
+}
+
+.item3 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item3 label,
+input {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.input-checkbox {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.item4 {
+  margin: 10px 0px 0px 50px;
+}
+
+.item4 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.item4 textarea {
+  font-size: 15px;
+  margin-top: 10px;
+  width: 350px;
+  height: 90px;
+}
+
+.item5 {
+  margin: 0px 0px 0px 50px;
+}
+
+.item5 > .submit-button {
+  position: relative;
+  top: -30px;
+  width: 600px;
+  height: 40px;
+  font-family: system-ui;
+  background-color: rgb(10, 10, 42);
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgb(0, 0, 1);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.item5 > .submit-button:hover {
+  position: relative;
+  top: -30px;
+  width: 600px;
+  height: 40px;
+  font-family: system-ui;
+  background-color: rgb(245, 255, 255);
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  #container_grid {
+    width: 500px;
+    height: 1400px;
+  }
+  .item > .form1 {
+    top: 40px;
+    left: 50px;
+    padding: 5px 80px 5px 20px;
+    font-size: 20px;
+  }
+  .item > .form2 {
+    top: -80px;
+    padding: 5px 80px 5px 20px;
+    font-size: 20px;
+  }
+  .item > .form3 {
+    top: -50px;
+    left: 50px;
+    padding: 5px 80px 5px 20px;
+    font-size: 20px;
+  }
+  .item > #description {
+    font-size: 15px;
+    top: -20px;
+  }
+  .item > .form4 {
+    padding: 5px 100px 5px 20px;
+    top: -10px;
+  }
+  .item2 p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .item3 p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .item5 > .submit-button {
+    top: -10px;
+    width: 380px;
+  }
+
+  .item5 > .submit-button:hover {
+    top: -10px;
+    width: 380px;
+  }
+
+  .item4 textarea {
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  #container_grid {
+    width: 550px;
+    height: 1450px;
+  }
+
+  .item > .form1 {
+    top: 40px;
+    padding: 5px 200px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > .form2 {
+    top: -80px;
+    padding: 5px 200px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > .form3 {
+    top: -50px;
+    padding: 5px 200px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > #description {
+    font-size: 17px;
+
+    top: -20px;
+  }
+
+  .item > .form4 {
+    padding: 5px 200px 5px 20px;
+    top: -10px;
+  }
+
+  .item3 p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .item4 {
+    margin: 7px 0px 0px 52px;
+  }
+
+  .item5 > .submit-button {
+    
+    width: 450px;
+  }
+
+  .item5 > .submit-button:hover {
+    width: 450px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #container_grid {
+    width: 600px;
+    height: 1400px;
+  }
+
+  .item > .form1 {
+    top: 40px;
+    padding: 5px 250px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > .form2 {
+    top: -80px;
+    padding: 5px 250px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > .form3 {
+    top: -50px;
+    padding: 5px 250px 5px 20px;
+    font-size: 20px;
+  }
+  .item > #description {
+    font-size: 18px;
+    top: -20px;
+  }
+  .item > .form4 {
+    padding: 5px 200px 5px 20px;
+    top: -10px;
+  }
+  
+  .item3 p {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .item5 > .submit-button {
+    top: -5px;
+    width: 500px;
+  }
+
+  .item5 > .submit-button:hover {
+    top: -5px;
+    width: 500px;
+  }
+  .item4 textarea {
+    margin: 2px 3px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  #container_grid {
+    width: 650px;
+    height: 1400px;
+  }
+  .item > .form1 {
+    top: 40px;
+    padding: 5px 300px 5px 20px;
+    font-size: 20px;
+  }
+
+  .item > .form2 {
+    top: -80px;
+    padding: 5px 300px 5px 20px;
+    font-size: 20px;
+  }
+  .item > .form3 {
+    top: -50px;
+    padding: 5px 300px 5px 20px;
+    font-size: 20px;
+  }
+  .item3 p {
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .item5 > .submit-button {
+    top: -5px;
+    width: 550px;
+  }
+  .item5 > .submit-button:hover {
+    top: -5px;
+    width: 550px;
+  }
+  .item4 textarea {
+    width: 345px;
+  }
+  
+}
+
+
+

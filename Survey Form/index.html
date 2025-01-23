@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="center">
+    <h1 id="title">Survey Form</h1>
+  </header>
+  <main>
+    <section>
+      <div id="container_grid">
+        <form id="survey-form">
+          <div class="item">
+            <label id="name-label" for="name">Name</label><br />
+            <input type="text" name="name" id="name" class="form1" placeholder="Enter your name"
+              required="" /><br /><br /><br /><br /><br /><br /><br /><br />
+            <label id="email-label" for="email">Email</label><br />
+            <input type="email" name="email" id="email" class="form2" placeholder="Enter your Email"
+              required="" /><br />
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label><br />
+            <input type="number" name="age" id="number" min="10" max="99" class="form3" placeholder="Age" />
+            <p id="description">
+              Please select the option that best represents your current role:
+            </p>
+            <select id="dropdown" name="role" class="form4" required="">
+              <option disabled="" selected="" value="">
+                Select current role
+              </option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="item2">
+            <p>How satisfied are you with the support you received?</p>
+            <label class="label-with-radio">
+              <input name="support-satisfaction" value="very-satisfied" type="radio" class="input-radio"
+                checked="" />Very Satisfied </label><br />
+            <label class="label-with-radio">
+              <input name="support-satisfaction" value="satisfied" type="radio" class="input-radio" />Satisfied
+            </label><br />
+            <label>
+              <input name="support-satisfaction" value="neutral" type="radio" class="input-radio" />Neutral
+            </label><br />
+            <label>
+              <input name="support-satisfaction" value="dissatisfied" type="radio" class="input-radio" />Dissatisfied
+            </label><br />
+            <label>
+              <input name="support-satisfaction" value="very-dissatisfied" type="radio" class="input-radio" />Very
+              Dissatisfied </label><br />
+          </div>
+          <div class="item3">
+            <p>
+              What features would you like to see added?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+
+            <label><input name="features" value="live-coding-sessions" type="checkbox" class="input-checkbox" />Live
+              Coding Sessions </label><br />
+            <label><input name="features" value="mentorship-programs" type="checkbox"
+                class="input-checkbox" />Mentorship Programs </label><br />
+            <label><input name="features" value="interactive-quizzes" type="checkbox"
+                class="input-checkbox" />Interactive Quizzes </label><br />
+            <label><input name="features" value="advanced-tutorials" type="checkbox" class="input-checkbox" />Advanced
+              Tutorials </label><br />
+            <label><input name="features" value="project-feedback" type="checkbox" class="input-checkbox" />Project
+              Feedback </label><br />
+            <label><input name="features" value="code-review-sessions" type="checkbox" class="input-checkbox" />Code
+              Review Sessions </label><br />
+            <label><input name="features" value="community-events" type="checkbox" class="input-checkbox" />Community
+              Events </label><br />
+            <label><input name="features" value="collaborative-projects" type="checkbox"
+                class="input-checkbox" />Collaborative Projects </label><br />
+            <label><input name="features" value="guest-lectures" type="checkbox" class="input-checkbox" />Guest Lectures
+            </label><br />
+            <label><input name="features" value="certification-courses" type="checkbox"
+                class="input-checkbox" />Certification Courses </label><br />
+          </div>
+          <div class="item4">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+              placeholder="Enter your comment here..."></textarea>
+          </div>
+        </form>
+        <div class="item5">
+          <button type="submit" id="submit" class="submit-button">
+             Submit
+          </button>
+       </div>
+    </section>
+  </main>
+</body>
+
+</html>
